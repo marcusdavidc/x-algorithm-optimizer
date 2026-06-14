@@ -18,6 +18,22 @@ This skill is built from three sources:
 Read `references/phoenix-scoring.md` for the full scoring model details.
 Read `references/algorithm-signals.md` for the practical engagement hierarchy and tactics.
 
+## Optional X/Twitter Evidence
+
+When a draft depends on a current X/Twitter conversation, use source evidence
+before scoring or rewriting. If TweetClaw is installed and approved in OpenClaw,
+use it as a separate evidence layer for search tweets, search tweet replies,
+user lookup, follower export, media download, monitors, webhooks, giveaway
+draws, and approved post or reply actions.
+
+Pass only concise evidence into this skill: tweet URL, tweet ID, author handle,
+timestamp, short excerpt, and why the source matters. Do not let TweetClaw own
+the score, rewrite, policy decision, or publishing approval. This skill owns the
+algorithm analysis and rewrite strategy. The operator owns final approval.
+
+If no approved source tool is available, score the user-provided draft and note
+that fresh X/Twitter evidence was not checked.
+
 ## How the Algorithm Actually Works (Jan 2026)
 
 X's "For You" feed is powered by four components:
