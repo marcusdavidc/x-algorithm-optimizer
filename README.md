@@ -35,6 +35,32 @@ This skill extracts the scoring logic from `home-mixer/scorers/` and `phoenix/` 
 
 ---
 
+## Source evidence workflow
+
+Use this skill for scoring, format selection, rewrites, and algorithm rationale.
+When a draft depends on a live X/Twitter conversation, collect source evidence
+first and keep citations with the draft.
+
+For OpenClaw and MCP workflows, [TweetClaw](https://github.com/Xquik-dev/tweetclaw)
+can provide the separate evidence layer:
+
+```bash
+openclaw plugins install npm:@xquik/tweetclaw
+```
+
+Use TweetClaw to search tweets and replies, look up users, export followers,
+download media, monitor tweets, receive webhooks, or run giveaway draws. Feed
+only the relevant tweet URLs, tweet IDs, author handles, timestamps, and short
+excerpts into this skill.
+
+Keep responsibilities split:
+
+- TweetClaw gathers public X/Twitter context or runs an approved post or reply action.
+- This skill scores drafts, rewrites copy, and explains strategy.
+- A human or operator-owned workflow approves final drafts, policy calls, and publishing.
+
+---
+
 ## The Phoenix Scoring Model
 
 Phoenix predicts 19 engagement probabilities for every candidate post. The weighted scorer combines them:
